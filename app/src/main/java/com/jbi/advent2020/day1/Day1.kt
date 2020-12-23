@@ -16,7 +16,7 @@ object Day1 {
             }
         }
     }
-    
+
     fun part2(data: List<Int>){
         for (i in data.indices) {
             for (j in i + 1 until data.size) {

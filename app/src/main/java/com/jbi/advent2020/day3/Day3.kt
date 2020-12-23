@@ -56,5 +56,4 @@ object Day3 : DailySolution() {
         }
         return trees
     }
-
 }
