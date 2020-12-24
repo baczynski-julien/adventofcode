@@ -8,7 +8,7 @@ import java.io.BufferedReader
  */
 object Day16 : DailySolution() {
 
-    override val runNonTest: Boolean
+    override val runWithInput: Boolean
         get() = true
     override val expectedResultP1: Any
         get() = 71

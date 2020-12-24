@@ -8,7 +8,7 @@ import java.io.BufferedReader
  * @author Julien BACZYNSKI on 12/3/20.
  */
 abstract class DailySolution {
-    protected open val runNonTest: Boolean = true
+    protected open val runWithInput: Boolean = true
     private val sampleFile: String
         get() = "2020/${this::class.java.simpleName.toLowerCase()}_sample.txt"
     private val inputFile: String
@@ -33,7 +33,7 @@ abstract class DailySolution {
         else
             log("Test part2 over sample data : $part2Test != $expectedResultP2 TEST KO")
 
-        if(runNonTest) {
+        if(runWithInput) {
             prerunInput(context.resources.assets.open(inputFile).bufferedReader())
             var ms = System.nanoTime()
             var result = part1(context.resources.assets.open(inputFile).bufferedReader())
