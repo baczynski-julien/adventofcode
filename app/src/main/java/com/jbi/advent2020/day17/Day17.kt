@@ -13,7 +13,7 @@ object Day17 : DailySolution() {
     private lateinit var initialState4D: Array<Array<Array<Array<Boolean>>>>
     private lateinit var initialState: Array<Array<Array<Boolean>>>
     private const val ITERATIONS = 6
-    override val runNonTest: Boolean
+    override val runWithInput: Boolean
         get() = true
     override val expectedResultP1: Any
         get() = 112

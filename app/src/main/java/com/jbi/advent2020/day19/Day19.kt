@@ -11,7 +11,7 @@ import java.io.BufferedReader
 object Day19 : DailySolution() {
 
     private lateinit var memory: SparseArray<List<String>>
-    override val runNonTest: Boolean
+    override val runWithInput: Boolean
         get() = true
     private lateinit var rules: SparseArray<Rule>
     private var maxRecursion: SparseArray<Int> = SparseArray()

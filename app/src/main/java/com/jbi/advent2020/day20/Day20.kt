@@ -9,7 +9,7 @@ import kotlin.math.sqrt
  */
 object Day20 : DailySolution() {
 
-    override val runNonTest: Boolean
+    override val runWithInput: Boolean
         get() = true
     private lateinit var tiles: MutableList<Tile>
 
