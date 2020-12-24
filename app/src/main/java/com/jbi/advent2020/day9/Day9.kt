@@ -8,24 +8,32 @@ import java.io.BufferedReader
  */
 object Day9 : DailySolution() {
 
+    private var wrongNumber: Long = 0
     private lateinit var data: List<Long>
     override val expectedResultP1: Any
         get() = 0
     override val expectedResultP2: Any
         get() = 0
 
-    override fun part1(reader: BufferedReader): Any {
+    override fun prerunInput(reader: BufferedReader) {
         data = buildData(reader)
-        return findWrongNumber(data)
+    }
+
+    override fun prerunSample(reader: BufferedReader) {
+        data = buildData(reader)
+    }
+
+    override fun part1(reader: BufferedReader): Any {
+        wrongNumber = findWrongNumber(data)
+        return wrongNumber
     }
 
     override fun part2(reader: BufferedReader): Any {
-        val wrongNumber = findWrongNumber(data)
         return findSum(data, wrongNumber)
     }
 
     private fun findSum(data: List<Long>, wrongNumber: Long): Long {
-        for (i in 0 until data.size -1) {
+        for (i in 0 until data.size - 1) {
             var sum = data[i]
             var max = data[i]
             var min = data[i]
