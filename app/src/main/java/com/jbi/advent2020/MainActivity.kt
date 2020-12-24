@@ -28,7 +28,7 @@ import com.jbi.advent2020.day9.Day9
 class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		Day24.run(this)
+		Day9.run(this)
 		finish()
 	}
 }
