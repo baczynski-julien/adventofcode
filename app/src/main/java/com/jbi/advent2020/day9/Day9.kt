@@ -53,9 +53,9 @@ object Day9 : DailySolution() {
     }
 
     private fun findWrongNumber(data: List<Long>): Long {
-        for (i in 25 until this.data.size) {
-            if (!checkSum(this.data[i], this.data.subList(i - 25, i))) {
-                return this.data[i]
+        for (i in 25 until data.size) {
+            if (!checkSum(data[i], data.subList(i - 25, i))) {
+                return data[i]
             }
         }
         return -1

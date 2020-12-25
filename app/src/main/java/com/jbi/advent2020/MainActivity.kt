@@ -17,6 +17,7 @@ import com.jbi.advent2020.day21.Day21
 import com.jbi.advent2020.day22.Day22
 import com.jbi.advent2020.day23.Day23
 import com.jbi.advent2020.day24.Day24
+import com.jbi.advent2020.day25.Day25
 import com.jbi.advent2020.day3.Day3
 import com.jbi.advent2020.day4.Day4
 import com.jbi.advent2020.day5.Day5
@@ -28,7 +29,7 @@ import com.jbi.advent2020.day9.Day9
 class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		Day9.run(this)
+		Day25.run(this)
 		finish()
 	}
 }
