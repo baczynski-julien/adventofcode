@@ -1,2 +1,5 @@
-include ':app'
-rootProject.name = "Advent2020"
+include ':2020'
+rootProject.name = "AdventOfCode"
+include ':core'
+include ':launcher'
+include ':2021'
