@@ -45,7 +45,7 @@ object Day5 : DailySolution2020() {
                 a
             }
         }
-        array.forEachIndexed () { index, b ->
+        array.forEachIndexed { index, b ->
             if(b == 0){
                 log("empty seat : $index")
             }

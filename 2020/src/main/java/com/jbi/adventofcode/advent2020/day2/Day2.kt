@@ -1,7 +1,7 @@
 package com.jbi.adventofcode.advent2020.day2
 
-import android.content.Context
-import android.util.Log
+import com.jbi.adventofcode.advent2020.DailySolution2020
+import java.io.BufferedReader
 
 private const val TAG = "DAY2"
 
@@ -11,23 +11,23 @@ private const val TAG = "DAY2"
 
 private const val FILENAME = "2020/day2_input.txt"
 
-object Day2 {
+object Day2 : DailySolution2020() {
 
-    fun part1(context: Context) {
-        val validCount = context.resources.assets.open(FILENAME).bufferedReader()
-            .useLines { sequence: Sequence<String> ->
-                sequence.fold(0) { a, b -> if (isValidPart1(b)) a + 1 else a }
-            }
-        Log.d(TAG, "valid count : $validCount")
-    }
+    override val expectedResultP1: Any
+        get() = 2
+    override val expectedResultP2: Any
+        get() = 1
 
-    fun part2(context: Context) {
-        val validCount = context.resources.assets.open(FILENAME).bufferedReader()
-            .useLines { sequence: Sequence<String> ->
-                sequence.fold(0) { a, b -> if (isValidPart2(b)) a + 1 else a }
-            }
-        Log.d(TAG, "valid count : $validCount")
-    }
+    override fun part1(reader: BufferedReader): Any =
+        reader.useLines { sequence: Sequence<String> ->
+            sequence.fold(0) { a, b -> if (isValidPart1(b)) a + 1 else a }
+        }
+
+    override fun part2(reader: BufferedReader): Any =
+        reader.useLines { sequence: Sequence<String> ->
+            sequence.fold(0) { a, b -> if (isValidPart2(b)) a + 1 else a }
+        }
+
 
     private fun isValidPart1(line: String): Boolean {
         val splits = line.split('-', ' ', ':')
@@ -60,4 +60,6 @@ object Day2 {
         }
         return valid1.xor(valid2)
     }
+
+
 }
