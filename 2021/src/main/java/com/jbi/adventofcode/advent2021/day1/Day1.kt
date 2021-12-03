@@ -57,5 +57,4 @@ object Day1 : DailySolution2021() {
                 }
             }
         }
-
 }
