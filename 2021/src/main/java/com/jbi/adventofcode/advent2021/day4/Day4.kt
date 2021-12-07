@@ -13,7 +13,7 @@ object Day4 : DailySolution2021() {
 
     override val expectedResultP1: Int
         get() = 4512
-    override val expectedResultP2: Long
+    override val expectedResultP2: Int
         get() = 1924
     lateinit var numbers: List<Int>
     lateinit var grids: MutableList<Grid>

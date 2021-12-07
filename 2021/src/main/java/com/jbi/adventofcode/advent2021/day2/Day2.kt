@@ -13,7 +13,7 @@ object Day2 : DailySolution2021() {
 
     override val expectedResultP1: Int
         get() = 150
-    override val expectedResultP2: Long
+    override val expectedResultP2: Int
         get() = 900
 
     /*

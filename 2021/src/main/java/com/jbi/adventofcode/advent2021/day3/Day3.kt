@@ -14,7 +14,7 @@ object Day3 : DailySolution2021() {
 
     override val expectedResultP1: Int
         get() = 198
-    override val expectedResultP2: Long
+    override val expectedResultP2: Int
         get() = 230
 
     override fun prerunInput(reader: BufferedReader) {
