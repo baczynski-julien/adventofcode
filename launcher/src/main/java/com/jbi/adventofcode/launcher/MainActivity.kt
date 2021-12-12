@@ -2,14 +2,14 @@ package com.jbi.adventofcode.launcher
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.jbi.adventofcode.advent2021.day6.Day6
-import com.jbi.adventofcode.advent2021.day7.Day7
-import com.jbi.adventofcode.advent2021.day8.Day8
+import com.jbi.adventofcode.advent2021.day10.Day10
+import com.jbi.adventofcode.advent2021.day11.Day11
+import com.jbi.adventofcode.advent2021.day12.Day12
 
 class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		Day8.run(this)
+		Day12.run(this)
 		finish()
 	}
 }

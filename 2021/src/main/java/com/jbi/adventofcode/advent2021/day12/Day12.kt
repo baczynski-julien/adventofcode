@@ -1,6 +1,7 @@
 package com.jbi.adventofcode.advent2021.day12
 
 import com.jbi.adventofcode.advent2021.DailySolution2021
+import com.jbi.adventofcode.advent2021.day9.Day9
 import java.io.BufferedReader
 
 /**
@@ -21,6 +22,24 @@ object Day12 : DailySolution2021() {
     }
 
     override fun part2(reader: BufferedReader): Any {
+        return 0
+    }
+
+    override fun prerunInput(reader: BufferedReader) {
+      // data = buildData(reader)
+    }
+
+    override fun prerunSample(reader: BufferedReader) {
+      //  data = buildData(reader)
+    }
+
+    private fun buildData(reader: BufferedReader): Any{
+        val arr: MutableList<MutableList<Int>> = mutableListOf()
+        reader.useLines { sequence ->
+            sequence.forEachIndexed { index, line ->
+
+            }
+        }
         return 0
     }
 
